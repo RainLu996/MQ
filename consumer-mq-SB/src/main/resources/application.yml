@@ -1,0 +1,11 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: consumer
+  rabbitmq:
+    host: 192.168.153.130
+    port: 5672
+    virtual-host: host1
+    username: rainlu
+    password: rainlu996

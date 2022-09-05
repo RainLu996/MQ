@@ -1,0 +1,15 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: provider
+  rabbitmq:
+    host: 192.168.153.130
+    port: 5672
+    virtual-host: host1
+    username: rainlu
+    password: rainlu996
+
+    # 在SpringBoot中保证：消息可靠性（⽣产者发送消息 —— 消息队列存储消息）
+    publisher-confirm-type: simple     # 开启消息确认模式
+    publisher-returns: true            # 使⽤return监听机制
